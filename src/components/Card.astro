@@ -1,84 +1,93 @@
 ---
-
 ---
 
 <style>
-    .flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 
-}
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding-right: 1rem;
+  }
 
-.flex-items:nth-child(1) {
- 
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-  padding-right: 1rem;
-}
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding-right: 1rem;
+  }
 
-.flex-items:nth-child(2) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-  padding-right: 1rem;
- 
-}
+  @font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Roboto-Regular.ttf);
+  }
 
-p{
-font-size: 1.5rem;
-text-align: center;
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "myFirstFont", monospace;
+  }
 
-}
+  .flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding-right: 1rem;
+  }
 
+  .flex-items:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
 
-
-.flex-items:nth-child(3) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-  padding-right: 1rem;
-}
-
-.flex-items:nth-child(4) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-}
-
-hr{
+  hr {
     border-top: 1px solid black;
-}
+  }
 </style>
 <section>
-    <hr>
-    <div class="flex-container">
-       
-        <div class="flex-items">
-            <img src="../src/icons/clock.svg" alt="" width="120" height="120"><p>Åbningstider</p>
-          
-        </div>
-        <div class="flex-items"> <img src="../src/icons/pin.svg" alt="" width="120" height="120"><p>Aktiviter</p></div>
-        <div class="flex-items"><img src="../src/icons/calendar.svg" alt="" width="120" height="120"><p>Kalender</p></div>
-        <div class="flex-items"><img src="../src/icons/pointer.svg" alt="" width="120" height="120"><p>Online Faraos</p></div>
-     
-   
-</div>
-<hr>
+  <hr />
+  <div class="flex-container">
+    <div class="flex-items">
+      <img src="../src/icons/clock.svg" alt="" width="120" height="120" /><p>
+        Åbningstider
+      </p>
+    </div>
+    <div class="flex-items">
+      <img src="../src/icons/pin.svg" alt="" width="120" height="120" /><p>
+        Aktiviter
+      </p>
+    </div>
+    <div class="flex-items">
+      <img src="../src/icons/calendar.svg" alt="" width="120" height="120" /><p>
+        Kalender
+      </p>
+    </div>
+    <div class="flex-items">
+      <img src="../src/icons/pointer.svg" alt="" width="120" height="120" /><p>
+        Online Faraos
+      </p>
+    </div>
+  </div>
+  <hr />
 </section>
