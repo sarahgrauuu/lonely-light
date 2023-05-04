@@ -1,0 +1,16 @@
+---
+const { imgPath } = Astro.props;
+---
+
+<ul>
+  <li><a href=""><img src={imgPath} alt="" /></a></li>
+</ul>
+<style>
+  li {
+    list-style-type: none;
+  }
+
+  img {
+    scale: 1.25;
+  }
+</style>

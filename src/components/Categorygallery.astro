@@ -1,3 +1,19 @@
 ---
-
 ---
+
+<section>
+  <slot />
+</section>
+
+<style>
+  section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 70px;
+    margin-right: var(--sdSpacing20);
+    margin-left: var(--sdSpacing20);
+    row-gap: var(--sdSpacing40);
+    margin-bottom: var(--sdSpacing40);
+  }
+</style>

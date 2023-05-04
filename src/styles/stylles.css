@@ -2,28 +2,28 @@
     font-family: 'Roboto';
     src: url('/fonts/Roboto-Regular.ttf') format('ttf');
     font-style: normal;
-    font-weight: 400;    
+    font-weight: 400;
 }
 
 @font-face {
     font-family: 'Roboto';
     src: url('/fonts/Roboto-Medium.ttf') format('ttf');
     font-style: normal;
-    font-weight: 500;    
+    font-weight: 500;
 }
 
 @font-face {
     font-family: 'Roboto';
     src: url('/fonts/Roboto-Bold.ttf') format('ttf');
     font-style: normal;
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 @font-face {
     font-family: 'Roboto';
     src: url('/fonts/Roboto-Black.ttf') format('ttf');
     font-style: normal;
-    font-weight: 900;    
+    font-weight: 900;
 }
 
 @font-face {
@@ -31,7 +31,11 @@
     src: url('/fonts/faraos2017.ttf') format('ttf');
 }
 
- :root {
+* {
+    box-sizing: border-box;
+}
+
+:root {
 
     /* Alias */
 
@@ -41,24 +45,38 @@
     --sdCategoryBoxBorderRadius: 3px;
 
     /* Item Texts Colors */
-    --sdItemSpecialTextRed: #F2474B; /* used for errors, discounts & general attention grabbing */
-    --sdItemSpecialTextBlue: #5B8FDA; /* used for attention grabbing, specially for "preorder" items */
-    --sdItemSpecialTextYellow: #EFD269; /* attention grabbing, specially for low stock items */
-    --sdItemSpecialTextGreen: #3E9F6E; /* use for attention grabbing, specially for in stock items */
-    --sdItemSpecialTextGrey: #828282; /* use for text, shipments in item cards */
-    --sdGrey600: #828282; /* Dark grey value for text */
-   
-    --sdGeneralText: #0e0f11; /* universal color for text */
-    --sdTeimCardBorder: #DEDEDE; /* use for item card borders, ui line dividers etc. */
+    --sdItemSpecialTextRed: #F2474B;
+    /* used for errors, discounts & general attention grabbing */
+    --sdItemSpecialTextBlue: #5B8FDA;
+    /* used for attention grabbing, specially for "preorder" items */
+    --sdItemSpecialTextYellow: #EFD269;
+    /* attention grabbing, specially for low stock items */
+    --sdItemSpecialTextGreen: #3E9F6E;
+    /* use for attention grabbing, specially for in stock items */
+    --sdItemSpecialTextGrey: #828282;
+    /* use for text, shipments in item cards */
+    --sdGrey600: #828282;
+    /* Dark grey value for text */
+
+    --sdGeneralText: #0e0f11;
+    /* universal color for text */
+    --sdTeimCardBorder: #DEDEDE;
+    /* use for item card borders, ui line dividers etc. */
 
     /* Spacing */
-    --sdHorizontalSpacingFilterBtnHorizontalSpacing: 20px; /* horizontal (x-axis) spacing for filter buttons */
-    --sdHorizontalSpacingItemCardHorizontalSpacing: 40px; /* horizontal spacing for item cards
+    --sdHorizontalSpacingFilterBtnHorizontalSpacing: 20px;
+    /* horizontal (x-axis) spacing for filter buttons */
+    --sdHorizontalSpacingItemCardHorizontalSpacing: 40px;
+    /* horizontal spacing for item cards
    */
-    --sdVerticalSpacingFilterBtnVerticalSpacing: 20px; /* vertical (y-axis) spacing for filter buttons */
-    --sdVerticalSpacingItemCardVerticalSpacing: 40px; /* vertical spacing for item cards */
-    --sdVerticalSpacingVertical110: 110px; /* big spacing to divide sections in product page */
-    --sdVerticalSpacingVertical300: 300px; /* spacing for last page section to footer */
+    --sdVerticalSpacingFilterBtnVerticalSpacing: 20px;
+    /* vertical (y-axis) spacing for filter buttons */
+    --sdVerticalSpacingItemCardVerticalSpacing: 40px;
+    /* vertical spacing for item cards */
+    --sdVerticalSpacingVertical110: 110px;
+    /* big spacing to divide sections in product page */
+    --sdVerticalSpacingVertical300: 300px;
+    /* spacing for last page section to footer */
 
     /* Border Width */
     --sdButtonBw: 2px;
@@ -69,13 +87,13 @@
     --sdFontFamiliesRoboto: 'Roboto';
     --sdFontFamiliesOldvankau: 'oldvankau';
 
-     /* fontweights */
-     --sdFontWeightsRobotoRegular: 400;
-     --sdFontWeightsRobotoMedium: 500;
-     --sdFontWeightsOldvankauRegular: 400;
-     --sdFontWeightsRobotoBlack: 900;
-     --sdFontWeightsRobotoBold: 700;
-     --sdFontWeightsRobotoSemibold: 600;
+    /* fontweights */
+    --sdFontWeightsRobotoRegular: 400;
+    --sdFontWeightsRobotoMedium: 500;
+    --sdFontWeightsOldvankauRegular: 400;
+    --sdFontWeightsRobotoBlack: 900;
+    --sdFontWeightsRobotoBold: 700;
+    --sdFontWeightsRobotoSemibold: 600;
 
     /* Font Sizing */
 
@@ -114,12 +132,17 @@
     --sdParagraphSpacing0: 0;
 
 
-    --sdButtonMediumRoboto: 500 12px/16 'Roboto'; /* smaller size buttons */
-    --sdButtonRegular: 400 18px/24 'Roboto'; /* regular buttons */
+    --sdButtonMediumRoboto: 500 12px/16 'Roboto';
+    /* smaller size buttons */
+    --sdButtonRegular: 400 18px/24 'Roboto';
+    /* regular buttons */
     --sdLabelSmall: 400 14px/20 'Roboto';
-    --sdBody1Roboto: 400 16px/24 'Roboto'; /* body text */
-    --sdBody2Roboto: 400 14px/20 'Roboto'; /* medium body text */
-    --sdBody3Roboto: 400 12px/16 'Roboto'; /* Small body text */
+    --sdBody1Roboto: 400 16px/24 'Roboto';
+    /* body text */
+    --sdBody2Roboto: 400 14px/20 'Roboto';
+    /* medium body text */
+    --sdBody3Roboto: 400 12px/16 'Roboto';
+    /* Small body text */
     --sdSubhead2Roboto: 400 14px/20 'Roboto';
     --sdSubhead1Roboto: 400 16px/24 'Roboto';
     --sdH6Roboto: 400 18px/24 'Roboto';
@@ -169,7 +192,7 @@
 
     --sdTitleSmall: 400 14px/20 Roboto;
     --sdButtonLarge: 900 18px/24 Roboto;
-    
+
     --sdSpacing20: 20px;
     --sdSpacing110: 110px;
     --sdSpacing300: 300px;
@@ -179,5 +202,4 @@
 
     --sdBwidth2: 2px;
     --sdBwidth1: 1px;
-  }
-  
+}
