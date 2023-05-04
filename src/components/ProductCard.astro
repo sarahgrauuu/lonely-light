@@ -1,0 +1,180 @@
+---
+const {
+  imgPath,
+  name1,
+  name2,
+  bestseller,
+  discount,
+  nyhed,
+  status,
+  shipment,
+  price,
+  discountprice,
+} = Astro.props;
+---
+
+<article>
+  <a href="">
+    <div class="topcarditems">
+      <svg
+        width="26"
+        height="27"
+        viewBox="0 0 26 25"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <ellipse cx="13" cy="12.5" rx="13" ry="12.5" fill="#D9D9D9"></ellipse>
+        <path
+          d="M13.0228 20.5042L11.9353 19.4251C8.07283 15.6077 5.52283 13.09 5.52283 10.0001C5.52283 7.48235 7.33783 5.50415 9.64783 5.50415C10.9528 5.50415 12.2053 6.45783 13.0228 7.50415C13.8403 6.45783 15.0928 5.50415 16.3978 5.50415C18.7078 5.50415 20.5228 7.48235 20.5228 10.0001C20.5228 13.09 17.9728 15.6077 14.1103 19.4333L13.0228 20.5042Z"
+          fill="#FCF9F9"></path>
+      </svg>
+
+      <div class="bestseller">
+        <p class="roboto">BESTSELLER</p><img
+          class="star"
+          src="../src/icons/star.svg"
+          alt=""
+        />
+      </div>
+      <div class="discountprc">
+        <p class="roboto discountprc">-8%</p>
+      </div>
+    </div>
+
+    <img class="itemImg" src="../src/img/chucky1.jpg" alt="" />
+    <div class="intemInfo">
+      <p class="name1 roboto">Bride of Chucky 1/1 Chucky Doll 76 cm{}</p>
+      <p class="name2 roboto">Neca Child's Play Prop Replica{}</p>
+      <div class="itemstatus">
+        <p class="roboto">
+          <span id="stats">FORUDBESTILINGSVARE{}</span>
+          <span id="shpmnt">| Afsendelse: 31-08-2023{}</span>
+        </p>
+      </div>
+      <div class="pricing">
+        <p class="roboto">DKK <span class="pricedicounted">5495{}</span></p>
+        <p class="roboto">DKK <span class="priceorg">5999{}</span></p>
+      </div>
+    </div>
+    <button></button>
+  </a>
+</article>
+
+<style>
+  a {
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: repeat(4);
+  }
+
+  article {
+    min-width: var(--sdWidth200);
+    max-width: 350px;
+    /* max-height: var(--sdHeight515); */
+    border: var(--sdBwidth1) solid;
+    border-color: var(--sdGrey400);
+    border-radius: var(--sdBorderRadius3);
+    padding: var(--sdSpacing5);
+    position: relative;
+  }
+  img.itemImg {
+    width: 99%;
+    grid-row: 1/3;
+    z-index: 0;
+  }
+  .topcarditems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    width: 97%;
+  }
+
+  svg :hover {
+    fill: var(--sdYellow);
+    scale: 1.3;
+  }
+
+  .bestseller {
+    display: flex;
+    background-color: var(--sdBlack);
+    gap: var(--sdSpacing5);
+    justify-content: center;
+    align-items: center;
+    max-width: min-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+  }
+
+  div.bestseller > p {
+    color: var(--sdYellow);
+    font-size: var(--sdFontSize0);
+  }
+
+  div.discountprc {
+    height: 40px;
+    font-size: var(--sdFontSize0);
+    background-color: var(--sdRed);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: var(--sdFontWeightsRobotoBold);
+    height: 40px;
+  }
+
+  .star {
+    scale: 1.3;
+  }
+
+  .name {
+    size: var(--sdFontSize4);
+    font-weight: var(--sdFontWeightsRobotoMedium);
+    color: red;
+  }
+
+  .name1,
+  .name2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--sdBlack);
+  }
+
+  #stats {
+    font-size: var(--sdFontSize0);
+    color: var(--sdBlue);
+    font-weight: 700;
+  }
+
+  #shpmnt {
+    font-size: var(--sdFontSize0);
+    color: var(--sdGrey600);
+  }
+
+  .pricing {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--sdSpacing110);
+  }
+
+  .pricing > p:nth-child(1) {
+    color: var(--sdItemSpecialTextRed);
+    font-weight: var(--sdFontWeightsRobotoMedium);
+    font-size: var(--sdFontSize4);
+  }
+
+  .pricing > p:nth-child(2) {
+    text-decoration: line-through;
+    font-size: var(--sdFontSize4);
+    color: var(--sdGrey600);
+  }
+
+  .priceorg {
+    font-weight: var(--sdFontWeightsRobotoBlack);
+  }
+
+  .pricedicounted {
+    font-weight: var(--sdFontWeightsRobotoBlack);
+  }
+</style>

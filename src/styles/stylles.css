@@ -84,8 +84,8 @@
 
     /* Fonts */
 
-    --sdFontFamiliesRoboto: 'Roboto';
-    --sdFontFamiliesOldvankau: 'oldvankau';
+    --sdFontFamiliesRoboto: Roboto;
+    --sdFontFamiliesOldvankau: oldvankau;
 
     /* fontweights */
     --sdFontWeightsRobotoRegular: 400;
@@ -171,9 +171,9 @@
     --sdParagraphIndent0: 0px;
 
     /* Border Radius */
-    --sdBorderRadius10: 10px;
+    --sdBorderRadius10: 20px;
     --sdBorderRadius100: 100px;
-    --sdBorderRadius3: 3px;
+    --sdBorderRadius3: 6px;
 
     /* global values */
 
@@ -196,10 +196,14 @@
     --sdSpacing20: 20px;
     --sdSpacing110: 110px;
     --sdSpacing300: 300px;
-    --sdWidth250: 250px;
+    --sdWidth200: 200px;
     --sdHeight515: 515px;
     --sdLabelXsmall: 700 10px/ Roboto;
 
     --sdBwidth2: 2px;
     --sdBwidth1: 1px;
+}
+
+p {
+    font-family: var(--sdFontFamiliesRoboto);
 }

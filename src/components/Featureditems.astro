@@ -1,0 +1,42 @@
+---
+---
+
+<section>
+  <hr />
+  <div class="featuredmenu">
+    <h2>Tilbud</h2>
+    <h2 class="grey">Nyheder</h2>
+    <h2 class="grey">Best Seller</h2>
+  </div>
+  <div>
+    <slot />
+  </div>
+</section>
+
+<style>
+  hr {
+    border-top: 1px solid;
+    border-color: var(--sdGrey600);
+  }
+
+  section {
+    margin-left: var(--sdSpacing20);
+    margin-right: var(--sdSpacing20);
+  }
+
+  .featuredmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: var(--sdHorizontalSpacingItemCardHorizontalSpacing);
+  }
+
+  h2 {
+    font-family: var(--sdFontFamiliesOldvankau);
+    font-size: var(--sdFontSize7);
+  }
+
+  .grey {
+    color: var(--sdItemSpecialTextGrey);
+  }
+</style>

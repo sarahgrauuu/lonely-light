@@ -6,6 +6,8 @@ import Footer from "../components/Footer.astro";
 import Helt from "../components/Helt.astro";
 import Categorygallery from "../components/Categorygallery.astro";
 import CategorygalleryItem from "../components/CategorygalleryItem.astro";
+import Featureditems from "../components/Featureditems.astro";
+import ProductCard from "../components/ProductCard.astro";
 ---
 
 <html lang="en">
@@ -36,11 +38,15 @@ import CategorygalleryItem from "../components/CategorygalleryItem.astro";
         <CategorygalleryItem imgPath="../src/img/dkcomics.svg" />
         <CategorygalleryItem imgPath="../src/img/us-comics.svg" />
       </Categorygallery>
-      <Card />
-      
+      <Featureditems>
+        <ProductCard 
+        
+        />
+        
+      </Featureditems>
+      <footer>
+        <Footer />
+      </footer>
     </main>
-    <footer>
-      <Footer />
-    </footer>
   </body>
 </html>
