@@ -1,0 +1,46 @@
+---
+import heroimg from "../img/heroimg.png";
+import herocard from "../img/herocard.svg";
+---
+
+<section>
+  <img src={heroimg} alt="" />
+  <img class="absolute" src={herocard} alt="" />
+  <div id="uielement">
+    <svg
+      width="78"
+      height="13"
+      viewBox="0 0 78 13"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="6.5" cy="6.5" r="6" fill="#C4C4C4" stroke="black"></circle>
+      <circle cx="29.5" cy="6.5" r="6" fill="white" stroke="black"></circle>
+      <circle cx="50.5" cy="6.5" r="6" fill="white" stroke="black"></circle>
+      <circle cx="71.5" cy="6.5" r="6" fill="white" stroke="black"></circle>
+    </svg>
+  </div>
+</section>
+
+<style>
+  section {
+    display: grid;
+    align-items: end;
+    justify-items: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  img.absolute {
+    width: 20%;
+    position: absolute;
+    margin-bottom: 6%;
+    cursor: pointer;
+  }
+
+  #uielement {
+    padding-top: var(--sdSpacing10);
+  }
+</style>

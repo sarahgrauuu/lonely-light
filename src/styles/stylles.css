@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 400;    
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Medium.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 500;    
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Bold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 700;    
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Black.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 900;    
+}
+
+@font-face {
+    font-family: 'oldvankau';
+    src: url('/fonts/faraos2017.ttf') format('ttf');
+}
+
+ :root {
+
+    /* Alias */
+
+    /* Border Radius */
+    --sdCtaButtonBorderRadius: 100px;
+    --sdFilterButtonBorderRadius: 10px;
+    --sdCategoryBoxBorderRadius: 3px;
+
+    /* Item Texts Colors */
+    --sdItemSpecialTextRed: #F2474B; /* used for errors, discounts & general attention grabbing */
+    --sdItemSpecialTextBlue: #5B8FDA; /* used for attention grabbing, specially for "preorder" items */
+    --sdItemSpecialTextYellow: #EFD269; /* attention grabbing, specially for low stock items */
+    --sdItemSpecialTextGreen: #3E9F6E; /* use for attention grabbing, specially for in stock items */
+    --sdItemSpecialTextGrey: #828282; /* use for text, shipments in item cards */
+    --sdGrey600: #828282; /* Dark grey value for text */
+   
+    --sdGeneralText: #0e0f11; /* universal color for text */
+    --sdTeimCardBorder: #DEDEDE; /* use for item card borders, ui line dividers etc. */
+
+    /* Spacing */
+    --sdHorizontalSpacingFilterBtnHorizontalSpacing: 20px; /* horizontal (x-axis) spacing for filter buttons */
+    --sdHorizontalSpacingItemCardHorizontalSpacing: 40px; /* horizontal spacing for item cards
+   */
+    --sdVerticalSpacingFilterBtnVerticalSpacing: 20px; /* vertical (y-axis) spacing for filter buttons */
+    --sdVerticalSpacingItemCardVerticalSpacing: 40px; /* vertical spacing for item cards */
+    --sdVerticalSpacingVertical110: 110px; /* big spacing to divide sections in product page */
+    --sdVerticalSpacingVertical300: 300px; /* spacing for last page section to footer */
+
+    /* Border Width */
+    --sdButtonBw: 2px;
+    --sdItemCardBw: 1px;
+
+    /* Fonts */
+
+    --sdFontFamiliesRoboto: 'Roboto';
+    --sdFontFamiliesOldvankau: 'oldvankau';
+
+     /* fontweights */
+     --sdFontWeightsRobotoRegular: 400;
+     --sdFontWeightsRobotoMedium: 500;
+     --sdFontWeightsOldvankauRegular: 400;
+     --sdFontWeightsRobotoBlack: 900;
+     --sdFontWeightsRobotoBold: 700;
+     --sdFontWeightsRobotoSemibold: 600;
+
+    /* Font Sizing */
+
+    --sdFontSize0: 12px;
+    --sdFontSize1: 14px;
+    --sdFontSize2: 16px;
+    --sdFontSize3: 18px;
+    --sdFontSize4: 22px;
+    --sdFontSize5: 24px;
+    --sdFontSize6: 28px;
+    --sdFontSize7: 32px;
+    --sdFontSize8: 45px;
+    --sdFontSize9: 64px;
+    --sdFontSize10: 72px;
+
+    /* Line Heights */
+    --sdLineHeights2: 14;
+    --sdLineHeights3: 20;
+    --sdLineHeights4: 24;
+    --sdLineHeights5: 28;
+    --sdLineHeights6: 32;
+    --sdLineHeights7: 40;
+    --sdLineHeights8: 52;
+    --sdLineHeights9: 36;
+    --sdLineHeightsOldvankauDisplay: 76;
+    --sdLineHeightsRobotoLabelMedium: 16;
+
+
+
+    --sdLetterSpacing05: 0.005em;
+    --sdLetterSpacing01: 0.001em;
+    --sdLetterSpacing025: 0.0025em;
+    --sdLetterSpacing04: 0.004em;
+    --sdLetterSpacing0: 0em;
+    --sdLetterSpacing5: 0.05em;
+    --sdParagraphSpacing0: 0;
+
+
+    --sdButtonMediumRoboto: 500 12px/16 'Roboto'; /* smaller size buttons */
+    --sdButtonRegular: 400 18px/24 'Roboto'; /* regular buttons */
+    --sdLabelSmall: 400 14px/20 'Roboto';
+    --sdBody1Roboto: 400 16px/24 'Roboto'; /* body text */
+    --sdBody2Roboto: 400 14px/20 'Roboto'; /* medium body text */
+    --sdBody3Roboto: 400 12px/16 'Roboto'; /* Small body text */
+    --sdSubhead2Roboto: 400 14px/20 'Roboto';
+    --sdSubhead1Roboto: 400 16px/24 'Roboto';
+    --sdH6Roboto: 400 18px/24 'Roboto';
+    --sdH5Roboto: 400 22px/28 'Roboto';
+    --sdH3Roboto: 500 28px/24 'Roboto';
+    --sdH4Roboto: 400 24px/32 'Roboto';
+    --sdH2Roboto: 400 32px/40 'Roboto';
+    --sdH1Roboto: 700 45px/52 'Roboto';
+    --sdSubhead2Oldvankau: 400 14px/20 'oldvankau';
+    --sdSubhead1Oldvankau: 400 16px/24 'oldvankau';
+    --sdH6Oldvankau: 400 18px/24 'oldvankau';
+    --sdH5Oldvankau: 400 22px/28 'oldvankau';
+    --sdH4Oldvankau: 400 24px/32 'oldvankau';
+    --sdH3Oldvankau: 400 28px/36 'oldvankau';
+    --sdH2Oldvankau: 400 32px/40 'oldvankau';
+    --sdH1Oldvankau: 400 45px/52 'oldvankau';
+    --sdDisplay3Oldvankau: 400 45px/76 'oldvankau';
+    --sdDisplay2Oldvankau: 400 64px/76 'oldvankau';
+    --sdDisplay1Oldvankau: 400 72px/76 'oldvankau';
+
+    /* Text Styling */
+    --sdTextCaseNone: none;
+    --sdTextCaseAllCaps: capitalize;
+    --sdTextCaseUppercase: uppercase;
+    --sdTextDecorationNone: none;
+    --sdParagraphIndent0: 0px;
+
+    /* Border Radius */
+    --sdBorderRadius10: 10px;
+    --sdBorderRadius100: 100px;
+    --sdBorderRadius3: 3px;
+
+    /* global values */
+
+    --sdWhite: #FFFFFF;
+    --sdGrey400: #DEDEDE;
+    --sdBlack: #0e0f11;
+    --sdYellow: #EFD269;
+    --sdGreen: #3E9F6E;
+    --sdBlue: #5B8FDA;
+    --sdRed: #F2474B;
+    --sdSpacing40: 40px;
+    --sdSpacing49: 49px;
+    --sdSpacing29: 29px;
+    --sdSpacing10: 10px;
+    --sdSpacing5: 5px;
+
+    --sdTitleSmall: 400 14px/20 Roboto;
+    --sdButtonLarge: 900 18px/24 Roboto;
+    
+    --sdSpacing20: 20px;
+    --sdSpacing110: 110px;
+    --sdSpacing300: 300px;
+    --sdWidth250: 250px;
+    --sdHeight515: 515px;
+    --sdLabelXsmall: 700 10px/ Roboto;
+
+    --sdBwidth2: 2px;
+    --sdBwidth1: 1px;
+  }
+  
