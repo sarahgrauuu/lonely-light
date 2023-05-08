@@ -7,7 +7,10 @@ import Helt from "../components/Helt.astro";
 import Categorygallery from "../components/Categorygallery.astro";
 import CategorygalleryItem from "../components/CategorygalleryItem.astro";
 import Featureditems from "../components/Featureditems.astro";
-import ProductCard from "../components/ProductCard.astro";
+import ProductCardBestseller from "../components/ProductCardBestseller.astro";
+import ProductCardDiscount from "../components/ProductCardDiscount.astro";
+import ProductCardNormal from "../components/ProductCardNormal.astro";
+import ProductCardNyhed from "../components/ProductCardNyhed.astro";
 ---
 
 <html lang="en">
@@ -39,11 +42,109 @@ import ProductCard from "../components/ProductCard.astro";
         <CategorygalleryItem imgPath="../src/img/us-comics.svg" />
       </Categorygallery>
       <Featureditems>
-        <ProductCard 
-        
+        <ProductCardBestseller
+          imgPath="../src/img/chucky1.jpg"
+          discount="-8%"
+          name1="Bride of Chucky 1/1 Chucky Doll 76 cm"
+          name2="Neca Child's Play Prop Replica"
+          bestseller="BESTSELLER"
+          staricon="../src/icons/star.svg"
+          status="FORUDBESTILINGSVARE"
+          shipping=" Afsendelse: 31-08-2023 "
+          currentprice="5495"
+          originalprice="5999"
+          type="FORUDEBESTILE"
         />
-        
+
+        <ProductCardDiscount
+          imgPath="../src/img/chucky2.jpg"
+          discount="-13%"
+          name1="Child's Play 2 Plush Body Doll 1/1"
+          name2="Good Guy 76 cm"
+          staricon="../src/icons/star.svg"
+          status="UDSOLGT"
+          currentprice="1995"
+          originalprice="2995"
+          type="EMAIL NÅR PÅ LAGER?"
+        />
+
+        <ProductCardNormal
+          imgPath="../src/img/chucky3.jpg"
+          discount="-8%"
+          name1="Childs Play 2 Prop Replica Chucky 74 cm"
+          name2="Trick or Treat Studios 1/1 Good Guys Doll (Box 89 cm)"
+          bestseller="BESTSELLER"
+          staricon="../src/icons/star.svg"
+          status="FÅ PÅ LAGER!"
+          shipping=" Afsendelse: 1 - 3 dage "
+          currentprice="4995"
+          type="FØJ TIL KURV"
+        />
+
+        <ProductCardNyhed
+          imgPath="../src/img/chucky4.jpg"
+          nyhed="NYHED"
+          name1="Childs Play 2 Prop Replica Chucky 74 cm"
+          name2="Trick or Treat Studios 1/1 Good Guys Doll (Box 89 cm)"
+          status="PÅ LAGER"
+          shipping=" Afsendelse: 1 - 3 dage "
+          currentprice="199"
+          ctatext="FØJ TIL KURV"
+        />
+
+        <ProductCardBestseller
+          imgPath="../src/img/chucky1.jpg"
+          discount="-8%"
+          name1="Bride of Chucky 1/1 Chucky Doll 76 cm"
+          name2="Neca Child's Play Prop Replica"
+          bestseller="BESTSELLER"
+          staricon="../src/icons/star.svg"
+          status="FORUDBESTILINGSVARE"
+          shipping=" Afsendelse: 31-08-2023 "
+          currentprice="5495"
+          originalprice="5999"
+          type="FORUDEBESTILE"
+        />
+
+        <ProductCardDiscount
+          imgPath="../src/img/chucky2.jpg"
+          discount="-13%"
+          name1="Child's Play 2 Plush Body Doll 1/1"
+          name2="Good Guy 76 cm"
+          staricon="../src/icons/star.svg"
+          status="UDSOLGT"
+          currentprice="1995"
+          originalprice="2995"
+          type="EMAIL NÅR PÅ LAGER?"
+        />
+
+        <ProductCardNormal
+          imgPath="../src/img/chucky3.jpg"
+          discount="-8%"
+          name1="Childs Play 2 Prop Replica Chucky 74 cm"
+          name2="Trick or Treat Studios 1/1 Good Guys Doll (Box 89 cm)"
+          bestseller="BESTSELLER"
+          staricon="../src/icons/star.svg"
+          status="FÅ PÅ LAGER!"
+          shipping=" Afsendelse: 1 - 3 dage "
+          currentprice="4995"
+          type="FØJ TIL KURV"
+        />
+
+        <ProductCardNyhed
+          imgPath="../src/img/chucky4.jpg"
+          nyhed="NYHED"
+          name1="Childs Play 2 Prop Replica Chucky 74 cm"
+          name2="Trick or Treat Studios 1/1 Good Guys Doll (Box 89 cm)"
+          status="PÅ LAGER"
+          shipping=" Afsendelse: 1 - 3 dage "
+          currentprice="199"
+          ctatext="FØJ TIL KURV"
+        />
+
+
       </Featureditems>
+      <Card />
       <footer>
         <Footer />
       </footer>

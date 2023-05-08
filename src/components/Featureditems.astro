@@ -8,7 +8,7 @@
     <h2 class="grey">Nyheder</h2>
     <h2 class="grey">Best Seller</h2>
   </div>
-  <div>
+  <div class="grid">
     <slot />
   </div>
 </section>
@@ -38,5 +38,12 @@
 
   .grey {
     color: var(--sdItemSpecialTextGrey);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    gap: 25px;
   }
 </style>

@@ -1,0 +1,43 @@
+---
+const { variant = "buynow", type = "small" } = Astro.props;
+---
+
+<button data-variant={variant} data-type={type}>
+  <slot />
+</button>
+
+<style>
+  button {
+    background-color: var(--sdWhite);
+  }
+ 
+  [data-variant="buynow"]:hover {
+    background-color: var(--sdGreen1);
+  }
+
+
+  [data-variant="preorder"]:hover {
+    background-color: var(--sdBlue1);
+  }
+
+  [data-variant="remindme"]:hover {
+    background-color: var(--sdYellow1);
+  }
+
+  
+
+  /* Sizes */
+
+  [data-type="productcard"] {
+    width: 90%;
+    border-radius: var(--sdBorderRadius3);
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--sdSpacing10);
+    cursor: pointer;
+    box-shadow: var(--sdShadowSmall);
+
+  }
+</style>

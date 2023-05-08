@@ -58,6 +58,9 @@
     --sdGrey600: #828282;
     /* Dark grey value for text */
 
+    /* buy now button hover  */
+    --sdGreen1: #B1DEC7;
+
     --sdGeneralText: #0e0f11;
     /* universal color for text */
     --sdTeimCardBorder: #DEDEDE;
@@ -121,6 +124,9 @@
     --sdLineHeightsOldvankauDisplay: 76;
     --sdLineHeightsRobotoLabelMedium: 16;
 
+    /*  shadow */
+    --sdShadowSmall: 4px 4px 0 0 #000000;
+    --sdShadowBig: 8px 8px 0 0 #000000;
 
 
     --sdLetterSpacing05: 0.005em;
@@ -180,9 +186,12 @@
     --sdWhite: #FFFFFF;
     --sdGrey400: #DEDEDE;
     --sdBlack: #0e0f11;
-    --sdYellow: #EFD269;
-    --sdGreen: #3E9F6E;
-    --sdBlue: #5B8FDA;
+    --sdYellow1:#FAECB8;
+    --sdYellow2: #EFD269;
+    --sdGreen1: #B1DEC7;
+    --sdGreen2: #3E9F6E;
+    --sdBlue1: #A9C3E8;
+    --sdBlue2: #5B8FDA;
     --sdRed: #F2474B;
     --sdSpacing40: 40px;
     --sdSpacing49: 49px;
@@ -206,4 +215,8 @@
 
 p {
     font-family: var(--sdFontFamiliesRoboto);
+}
+
+a {
+    text-decoration: none;
 }
